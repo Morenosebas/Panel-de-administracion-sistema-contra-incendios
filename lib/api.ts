@@ -1,6 +1,6 @@
 import type { DeviceState, ControlMode } from "./types"
 
-const API_BASE_URL = "http://localhost:4000/api"
+const API_BASE_URL = "http://85.239.238.108:4000/api"
 
 export async function controlDevice(device: "ventilador" | "aspersor", state: DeviceState) {
   const response = await fetch(`${API_BASE_URL}/control/${device}`, {

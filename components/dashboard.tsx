@@ -41,7 +41,7 @@ export default function Dashboard() {
     hasExceededMaxAttempts,
     reconnectAttempts,
   } = useWebSocket({
-    url: "ws://localhost:4000/ws/sensors",
+    url: "ws://:85.239.238.108:4000/ws/sensors",
     onMessage: (data: SensorData) => {
       setSensorData(data);
       setIsConnected(true);
